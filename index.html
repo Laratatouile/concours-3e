@@ -20,7 +20,7 @@
             <!-- partie 1 -->
             <div class="sommaire_partie_titre">
                 <p>
-                    <a href="#I">I) La blibliothèque turtle</a>
+                    <a href="#I">I) La bibliothèque turtle</a>
                     <img id="ouv_img_1" onclick="rap_ouv(1)" src="./images/fleche.png" alt=">">
                 </p>
             </div>
@@ -48,6 +48,9 @@
             <div id="sommaire_2_2" class="sommaire_partie">
                 <p><a href="#II_2">2) Les boucles de base</a></p>
             </div>
+            <div id="sommaire_2_3" class="sommaire_partie">
+                <p><a href="#II_3">3) Les opérations</a></p>
+            </div>
             <div class="sommaire_partie_titre">
                 <p>
                     <a href="#II">III) Les Exercices</a>
@@ -69,6 +72,15 @@
             <div id="sommaire_3_5" class="sommaire_partie">
                 <p><a href="#III_5">Exercie 4</a></p>
             </div>
+            <div id="sommaire_3_6" class="sommaire_partie">
+                <p><a href="#III_6">Exercie 5</a></p>
+            </div>
+            <div id="sommaire_3_7" class="sommaire_partie">
+                <p><a href="#III_7">Exercie 6</a></p>
+            </div>
+            <div id="sommaire_3_8" class="sommaire_partie">
+                <p><a href="#III_8">Exercie 7</a></p>
+            </div>
         </div>
     </div>
     <div id="la_page" class="la_page_sans_la_barre">
@@ -87,7 +99,7 @@
 
             <!-- partie 1 -->
 
-            <h1 id="I">I) La blibliothèque turtle</h1>
+            <h1 id="I">I) La bibliothèque turtle</h1>
             <div class="partie">
                 <div id="I_1" class="sous_partie">
                     <div class="partie_titre">
@@ -97,9 +109,9 @@
                     </div>
                     <div class="partie_texte">
                         <p>
-                            première étape: importer la blibliothèque turtle. <br>
-                            C'est la blibliothèque qui permet de faire des dessins de base. <br>
-                            Cette blibliothèque est également assez simple d'utilisation. <br>
+                            première étape: importer la bibliothèque turtle. <br>
+                            C'est la bibliothèque qui permet de faire des dessins de base. <br>
+                            Cette bibliothèque est également assez simple d'utilisation. <br>
                         </p>
                         <pre>
                             <code class="language-python">
@@ -192,6 +204,49 @@
                                 La couleur de la tortue.
                             </li>
                             
+                            La bibliothèque nous permet également de changer la couleur de la tortue.
+
+                            La liste est disponible ici:
+                            <ul>
+                                <li>
+                                    red
+                                </li>
+                                <li>
+                                    blue
+                                </li>
+                                <li>
+                                    green
+                                </li>
+                                <li>
+                                    yellow
+                                </li>
+                                <li>
+                                    orange
+                                </li>
+                                <li>
+                                    purple
+                                </li>
+                                <li>
+                                    pink
+                                </li>
+                                <li>
+                                    brown
+                                </li>
+                                <li>
+                                    black
+                                </li>
+                                <li>
+                                    white
+                                </li>
+                            </ul>
+
+                            Attention à mettre la couleur entre guillemets pour dire à python que c'est une chaîne de caractères et non une variable.
+
+                            <pre>
+                                <code class="language-python">
+                                    color('red')
+                                </code>
+                            </pre>
 
                         </p>
                     </div>
@@ -259,12 +314,12 @@
                         <p>
                             Les varibles sont des sortes de boîtes dans lesquelles nous pouvons
                             stocker des informations. <br>
-                            Par exemple nous pouvons stocker notre x.
+                            Par exemple nous pouvons stocker la longueur du coté du carré dans la variable cote.
                             <pre>
                                 <code class="language-python">
                                     from turtle import *
 
-                                    x = 50  # ici on défini que x vaut 50
+                                    cote = 50  # ici on défini que cote vaut 50
 
                                     forward(x)
                                     # ici on utilise notre variable pour dire à la tortue d'avancer de 50 pixels
@@ -276,7 +331,7 @@
                         </p>
                     </div>
                 </div>
-                <div id="II_2" class="sous_partie_fin">
+                <div id="II_2" class="sous_partie">
                     <div class="partie_titre">
                         <p>
                             2) Les boucles de base
@@ -297,6 +352,65 @@
                                     # la suite du code
                                 </code>
                             </pre>
+                        </p>
+                    </div>
+                </div>
+                <div id="II_3" class="sous_partie_fin">
+                    <div class="partie_titre">
+                        <p>
+                            3) Les opérations
+                        </p>
+                    </div>
+                    <div class="partie_texte">
+                        <p>
+                            différentes opérations sont disponibles sur les variables. <br>
+                            On utilisera les variables a et b qui sont des chiffres.
+                            <table>
+                                <tr>
+                                    <th>L'opération</th>
+                                    <th>L'opération en python</th>
+                                </tr>
+                                <tr>
+                                    <td>l'addition</td>
+                                    <td>
+                                        <pre>
+                                            <code class="language-python">
+                                                a + b
+                                            </code>
+                                        </pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>la soustraction</td>
+                                    <td>
+                                        <pre>
+                                            <code class="language-python">
+                                                a - b
+                                            </code>
+                                        </pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>la multiplication</td>
+                                    <td>
+                                        <pre>
+                                            <code class="language-python">
+                                                a * b
+                                            </code>
+                                        </pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>la division</td>
+                                    <td>
+                                        <pre>
+                                            <code class="language-python">
+                                                a / b
+                                            </code>
+                                        </pre>
+                                    </td>
+                                </tr>
+                            </table>
                         </p>
                     </div>
                 </div>
@@ -325,7 +439,7 @@
                     </div>
                     <div class="partie_texte">
                         <p>
-                            A l'aide de la blibliothèque turtle dessiner un carré.
+                            A l'aide de la bibliothèque turtle dessiner un carré.
                         </p>
                     </div>
                 </div>
@@ -354,12 +468,28 @@
                         Vous pouvez le faire de plein de manières différentes. <br>
                     </div>
                 </div>
-                <div id="III_6" class="sous_partie_fin">
+                <div id="III_6" class="sous_partie">
                     <div class="partie_titre">
                         Exercice 5
                     </div>
                     <div class="partie_texte">
                         Sur votre sapin ajoutez 3 boules.
+                    </div>
+                </div>
+                <div id="III_7" class="sous_partie">
+                    <div class="partie_titre">
+                        Exercice 6
+                    </div>
+                    <div class="partie_texte">
+                        Mettez en couleur votre sapin pour qu'il ressemble à quelque chose.
+                    </div>
+                </div>
+                <div id="III_8" class="sous_partie_fin">
+                    <div class="partie_titre">
+                        Exercice 7
+                    </div>
+                    <div class="partie_texte">
+                        Faites en sorte de pouvoir changer la taille de votre sapin grâce aux variables.
                     </div>
                 </div>
             </div>

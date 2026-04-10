@@ -6,6 +6,7 @@ body{
 
 .conteneur{
     margin-left: 80px;
+    margin-right: 10px;
     text-align: center;
 }
 
@@ -159,7 +160,7 @@ h1{
 .partie{
     padding: 5px;
     border: solid 2px #594367 ;
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: #9684A1;
     margin-top: 30px ;
 }
@@ -215,4 +216,31 @@ pre {
 
 li {
     margin-bottom: 20px;
+}
+
+ul ul li{
+    margin-bottom: 0px;
+}
+
+
+
+/* les tables */
+table tr th{
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+table tr td{
+    padding: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+table {
+    margin-left: 20px;
+    margin-top: 15px;
+    padding: 15px;
+    border: solid 2px #3e4046;
 }
