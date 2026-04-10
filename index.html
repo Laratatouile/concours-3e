@@ -21,7 +21,7 @@
             <div class="sommaire_partie_titre">
                 <p>
                     <a href="#I">I) La blibliothèque turtle</a>
-                    <img id="ouv_img_1" onclick="rap_ouv('1')" src="./images/fleche.png" alt=">">
+                    <img id="ouv_img_1" onclick="rap_ouv(1)" src="./images/fleche.png" alt=">">
                 </p>
             </div>
             <div id="sommaire_1_1" class="sommaire_partie">
@@ -35,6 +35,36 @@
             </div>
             <div id="sommaire_1_3" class="sommaire_partie">
                 <p><a href="#I_4">4) Un site web pour turtle</a></p>
+            </div>
+            <div class="sommaire_partie_titre">
+                <p>
+                    <a href="#II">II) Les bases du python</a>
+                    <img id="ouv_img_2" onclick="rap_ouv(2)" src="./images/fleche.png" alt=">">
+                </p>
+            </div>
+            <div id="sommaire_2_1" class="sommaire_partie">
+                <p><a href="#II_1">1) Les variables</a></p>
+            </div>
+            <div id="sommaire_2_2" class="sommaire_partie">
+                <p><a href="#II_2">2) Les boucles de base</a></p>
+            </div>
+            <div class="sommaire_partie_titre">
+                <p>
+                    <a href="#II">III) Les Exercices</a>
+                    <img id="ouv_img_3" onclick="rap_ouv(3)" src="./images/fleche.png" alt=">">
+                </p>
+            </div>
+            <div id="sommaire_3_1" class="sommaire_partie">
+                <p><a href="#III_1">1) Les consignes</a></p>
+            </div>
+            <div id="sommaire_3_2" class="sommaire_partie">
+                <p><a href="#III_2">Exercie 1</a></p>
+            </div>
+            <div id="sommaire_3_3" class="sommaire_partie">
+                <p><a href="#III_3">Exercie 2</a></p>
+            </div>
+            <div id="sommaire_3_4" class="sommaire_partie">
+                <p><a href="#III_4">Exercie 3</a></p>
             </div>
         </div>
     </div>
@@ -196,9 +226,11 @@
                     </div>
                 </div>
             </div>
-            <h1>
-                II Les bases du python
-            </h1>
+
+
+
+            <!-- la partie II -->
+            <h1 id="II"> II Les bases du python </h1>
             <div class="partie">
                 <div id="II_1" class="sous_partie">
                     <div class="partie_titre">
@@ -227,10 +259,10 @@
                         </p>
                     </div>
                 </div>
-                <div class="sous_partie">
+                <div id="II_2" class="sous_partie_fin">
                     <div class="partie_titre">
                         <p>
-                            2) les boucles de base
+                            2) Les boucles de base
                         </p>
                     </div>
                     <div class="partie_texte">
@@ -241,7 +273,7 @@
                                 <code class="language-python">
                                     # le code
                                     
-                                    # la boucle
+                                    # la boucle ici on répète 10 fois
                                     for _ in range(10):
                                         # les éléments à répéter
 
@@ -249,6 +281,51 @@
                                 </code>
                             </pre>
                         </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Les exos -->
+            <h1 id="III"> III) Les Exercices </h1>
+            <div class="partie">
+                <div id="III_1" class="sous_partie">
+                    <div class="partie_titre">
+                        <p>
+                            Consignes
+                        </p>
+                    </div>
+                    <div class="partie_texte">
+                        Réaliser les exercices sur basthon puis nous appeler pour vérifier vos résultats. <br>
+                        Vos noms seront affichés sur le tableau avec votre nombre de points.
+                    </div>
+                </div>
+                <div id="III_2" class="sous_partie">
+                    <div class="partie_titre">
+                        <p>
+                            Exercice 1
+                        </p>
+                    </div>
+                    <div class="partie_texte">
+                        <p>
+                            A l'aide de la blibliothèque turtle dessiner un carré.
+                        </p>
+                    </div>
+                </div>
+                <div id="III_3" class="sous_partie">
+                    <div class="partie_titre">
+                        Exercice 2
+                    </div>
+                    <div class="partie_texte">
+                        Réaliser un triangle.
+                    </div>
+                </div>
+                <div id="III_4" class="sous_partie_fin">
+                    <div class="partie_titre">
+                        Exercice 3
+                    </div>
+                    <div class="partie_texte">
+                        Réaliser une étoile.
                     </div>
                 </div>
             </div>
