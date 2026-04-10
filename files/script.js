@@ -13,15 +13,16 @@ function bg_color(){
 
 // ouvrir et fermer les parties
 function rap_ouv(number){
-    alert("sommaire_"+number+"_1");
-    if (document.getElementById("sommaire_"+number+"_1").style.display == "none") {
-        let els = document.querySelectorAll('[id^="sommaire_'+number+'"]');
-        els.forEach(el => el.style.display = "block");
-        document.getElementById("ouv_img_"+number).style.transform = 'rotate(90deg)';
-    } else {
-        document.getElementById("sommaire_"+number).style.display = "none";
-        document.getElementById("ouv_img_"+number).style.transform = 'rotate(0deg)';
-    }
+    const els = document.querySelectorAll('[id^="sommaire_'+number+'_"]');
+    const first = document.getElementById("sommaire_"+number+"_1");
+    const isHidden = getComputedStyle(first).display === "none";
+
+    els.forEach(el => {
+        el.style.display = isHidden ? "block" : "none";
+    });
+
+    document.getElementById("ouv_img_"+number).style.transform =
+        isHidden ? "rotate(90deg)" : "rotate(0deg)";
 }
 
 

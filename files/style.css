@@ -23,8 +23,8 @@ h1{
     position: fixed;
     width: 65px;
     height: 100vh;
-    background-color: rgb(94, 94, 194);
-    border-right: solid 2px blue;
+    background-color: #AAACB0;
+    border-right: solid 2px #6d6f74;
 }
 .bande_gauche:hover ~ .navigation_rapide{
     margin-left: 0px;
@@ -33,7 +33,7 @@ h1{
     writing-mode: vertical-lr;
     text-align: center;
     font-size: 50px;
-    color: blue;
+    color: #7a7c7f;
     margin-top: 170%;
     margin-left: 0px;
     -webkit-user-select: none;
@@ -54,17 +54,13 @@ h1{
     padding-right: 10px;
     margin-left: -300px;
     position: fixed;
-    border-right: solid 2px rgb(0, 0, 143);
-    background-color: rgb(53, 53, 112);
+    border-right: solid 2px #818387;
+    background-color: #AAACB0;
 }
 .navigation_rapide:hover{
     margin-left: 0px;
 }
-.navigation_rapide .somm0{
-    color: rgb(82, 82, 202);
-    font-size: 30px;
-    text-decoration: underline;
-}
+
 
 /* sommaire */
 .sommaire{
@@ -107,7 +103,7 @@ h1{
     padding-top: 8px;
     padding-left: 90px;
     padding-bottom: 6px;
-    background-color: rgb(172, 9, 166);
+    background-color: #985F99;
     color: rgb(0, 0, 0);
     width: 100%;
     height: 70px;
@@ -146,7 +142,7 @@ h1{
     margin-left: -13px;
     padding-left: 13px;
     padding-right: 13px;
-    background-color: rgb(172, 9, 166);
+    background-color: #985F99;
     color: rgb(0, 0, 0);
     width: 100%;
     height: 5%;
@@ -162,9 +158,9 @@ h1{
 /* parties */
 .partie{
     padding: 5px;
-    border: solid 2px blue ;
+    border: solid 2px #594367 ;
     border-radius: 5px;
-    background-color: cadetblue;
+    background-color: #9684A1;
     margin-top: 30px ;
 }
 
@@ -184,7 +180,7 @@ h1{
 .sous_partie{
     padding: 5px;
     padding-bottom: 20px;
-    border-bottom: solid 2px blue;
+    border-bottom: solid 2px #594367;
     margin-bottom: 40px;
     text-align: left;
 }
@@ -196,7 +192,22 @@ h1{
     text-align: left;
 }
 
+.partie img{
+    max-width: 100%;
+    max-height: 100%;
+}
 
 pre {
     border-radius: 7px;
+}
+
+
+.partie a{
+    background-color: #6d6f74;
+    color: black;
+    padding: 5px;
+    margin: 20px;
+    text-decoration: none;
+    border-radius: 7px;
+    border: solid 2px #3e4046;
 }
