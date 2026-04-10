@@ -211,3 +211,8 @@ pre {
     border-radius: 7px;
     border: solid 2px #3e4046;
 }
+
+
+li {
+    margin-bottom: 20px;
+}
